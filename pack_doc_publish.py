@@ -84,9 +84,13 @@ def cd(path_to_cd):
         yield
     finally:
         os.chdir(pwd)
+        
+def check_replace_word():
+    print('INFO    -  Check & Replace wrong words')
+    os.system("bash ./error_word_replace.sh {}".format(MKDOWN_SRC))
 
 if __name__ == "__main__":
-    atexit.register(lambda: print('pack_publish script exited'))
+    atexit.register(lambda: print('INFO    -  Pack-Publish-Script exited'))
     PUT = False
     if len(sys.argv) == 2 and sys.argv[1]:
         PUT = True
