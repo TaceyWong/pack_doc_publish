@@ -1,11 +1,17 @@
 # Pack Doc Publish
 非公开内部文档整理小型解决方案
 
-# Pack Doc Publish
-非公开内部文档整理小型解决方案
+实现功能：
+
++ 常用错词、敏感词替换
++ markdown -> html -> exe
++ 版本控制
++ 直接内网服务器发布
 
 
-主要工具：
+
+
+主要依赖工具：
 
 + [mkdocs](https://www.mkdocs.org/)：静态网站生成，markdown编写文档，将markdown转换成完整html静态网站
 + git:版本控制
